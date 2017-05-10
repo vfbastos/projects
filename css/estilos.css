@@ -1,0 +1,145 @@
+/* CLEAR */
+
+header a.menu-hamburguer{
+	background:url("../img/menu-open.svg") no-repeat center;
+	width: 32px;
+	height: 32px;
+	display: none;
+	float: right;
+	background-size: 100%;
+	text-indent: -9999px;
+	position: absolute;
+	z-index: 99999;
+	right: 20px;
+	top: 28px;
+}
+header a.menu-hamburguer.close{
+	background:url("../img/menu-close.svg") no-repeat center;
+	background-size: 100%;
+}
+
+.vbox-close{
+	background-color: transparent;
+}
+html, body {
+	background-color:#fff;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+div.clear {
+    clear: both;
+    display: table;
+}
+*{
+	outline: 0 none;
+	box-sizing:border-box;
+}
+p{
+	margin:0;
+}
+form{
+	margin: 0;
+}
+b{
+	font-weight: 100;
+}
+p, div, label, input, textarea, select{
+	color: #fff;
+	font-family: "";
+}
+input{
+    -webkit-appearance:none;  
+    -webkit-border-radius:0px;
+}
+h1, h2, h3 {
+	margin:0;
+	padding:0;
+	font-weight: 100;
+	color: #fff;
+	font-family: "";
+}
+.container{
+	max-width:1240px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+br{
+	line-height: 10px;
+}
+div{
+	text-align:left;
+}
+img{
+	border: 0 none;
+}
+a{
+	text-decoration: none;
+	font-family: "";
+}
+address{
+	text-decoration: none;
+	font-family: "";
+}
+a:hover{
+	text-decoration: none;
+	
+}
+input, select, textarea{
+	background: rgba(0,0,0,0) none repeat scroll 0 0;
+	border: 0 none;
+}
+ul{
+	list-style: outside none none;
+	padding: 0;
+	margin: 0;
+}
+hr{
+	border: 0;
+}
+
+@media screen and (max-width: 1200px){
+	header{
+		height: 80px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,0.5);
+	}
+	header a.menu-hamburguer{
+		display: block;
+	}
+	header nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #fff;
+		height: 0;
+		transition: all 0.2s linear 0s;
+		overflow: auto;
+	}
+	header nav.ativo{
+		height: 100%;
+	}
+	header nav ul{
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		display: block;
+	}
+	header nav ul li{
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		display: block;
+		float: none;
+		margin: 20px auto 0;
+	}
+	header nav ul li a{
+		color: #000;
+	}
+}
